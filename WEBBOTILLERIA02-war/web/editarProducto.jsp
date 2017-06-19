@@ -9,6 +9,7 @@
     int id = Integer.parseInt(request.getParameter("p_id"));
     String nombre = request.getParameter("p_nombre");
     int precio = Integer.parseInt(request.getParameter("p_precio"));
+    String tipo = request.getParameter("p_tipo");
     int stock = Integer.parseInt(request.getParameter("p_stock"));
     
 %>    
@@ -19,7 +20,7 @@
         <title>Editar Producto</title>
     </head>
     <body>
-        <h1>Editar Producto...</h1><hr>
+        <h1><img src="imagenes/editar.png"/> Editar Producto...</h1><hr>
         <form name="frm_editarProducto" method="post" action="EditarProductoServlet">
             <table>
                 <tr>
@@ -35,6 +36,10 @@
                     <td><input type="text" name="txt_editaPrecio" value="<%out.print(precio);%>"></td>
                 </tr>
                 <tr>
+                    <td>TIPO</td>
+                    <td><input type="text" name="txt_editaTipo" value="<%out.print(tipo);%>"></td>
+                </tr>
+                <tr>
                     <td>STOCK</td>
                     <td><input type="text" name="txt_editaStock" value="<%out.print(stock);%>"></td>
                 </tr>
@@ -47,8 +52,3 @@
     </body>
 </html>
 
-<!-- <input type="text" name="txt_editaNombre" placeholder="Ingresa nuevo nombre"><br>
-             
-            Precio: <input type="integer" name="txt_editaPrecio" placeholder="Ingresa nuevo precio"><br>
-            Stock: <input type="integer" name="txt_editaStock" placeholder="Ingresa nuevo stock">
--->

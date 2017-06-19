@@ -24,8 +24,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class ListaProductosServlet extends HttpServlet {
 
-    @EJB
-    private DetallesFacadeLocal detallesFacade;
+    
 
     @EJB
     private ProductosFacadeLocal productosFacade;
@@ -53,7 +52,7 @@ public class ListaProductosServlet extends HttpServlet {
             out.println("<body>");
             
             List<Productos>ListaProductos = productosFacade.findAll();
-            //List<Detalles>ListaDetalles = detallesFacade.findAll();
+            
             
             out.println("<h1><img src=\'imagenes/lista1.png\'/> LISTADO DE PRODUCTOS: </h1>");
             out.println("<hr/>");
@@ -63,6 +62,7 @@ public class ListaProductosServlet extends HttpServlet {
                     out.println("<td>ID</td>");
                     out.println("<td>NOMRBE</td>");
                     out.println("<td>PRECIO</td>");
+                    out.println("<td>TIPO</td>");
                     out.println("<td>STOCK</td>");
                     out.println("</tr>");
                     for(Productos p: ListaProductos){
@@ -70,47 +70,20 @@ public class ListaProductosServlet extends HttpServlet {
                     out.println("<td>"+p.getId()+"</td>");
                     out.println("<td>"+p.getNombre_producto()+"</td>");
                     out.println("<td>"+p.getPrecio()+"</td>");
+                    out.println("<td>"+p.getTipo()+"</td>");
                     out.println("<td>"+p.getStock()+"</td>");
                     out.println("<td> <a href='editarProducto.jsp?p_id="+p.getId()
                             +"&p_nombre="+p.getNombre_producto()+"&p_precio="+p.getPrecio()
-                            +"&p_stock="+p.getStock()+"'> Editar </a> - "
+                            +"&p_tipo="+p.getTipo()+"&p_stock="+p.getStock()+"'> Editar </a> - "
                             + "<a href='eliminar-producto.jsp?p_id="+p.getId()
                             +"&p_nombre="+p.getNombre_producto()+"'> Eliminar </a></td>");
                     out.println("</tr>");
                     }
-                    /*
+               
                     out.println("</table>");
-                    out.println("<table>");
-                    out.println("<tr>");
-                    out.println("<td>FECHA INGRESO</td>");
-                    out.println("<td>MARCA</td>");
-                    out.println("<td>MODALIDAD</td>");
-                    out.println("<td>PROVEEDOR</td>");
-                    out.println("<td>TAMAÑO</td>");
-                    out.println("<td>GRADOS ALCOHOL</td>");
-                    out.println("</tr>");
-                    for(Detalles d: ListaDetalles){
-                    out.println("<tr>");
-                    out.println("<td>"+d.getFecha_ing()+"</td>");
-                    out.println("<td>"+d.getMarca()+"</td>");
-                    out.println("<td>"+d.getModalidad()+"</td>");
-                    out.println("<td>"+d.getProveedor()+"</td>");
-                    out.println("<td>"+d.getTamano()+"</td>");
-                    out.println("<td>"+d.getGrados()+"</td>");
-                    out.println("<td> <a href='#'> Editar </a> - <a href='#'> Eliminar </a></td>");
-                    out.println("</tr>");
-                    }
-                    */
-                out.println("</table>");
-            /*    
-            for(Productos p: ListaProductos){   
-            out.println("<h1> - Nombre: " +p.getNombre_producto()+ 
-                    " ~ Precio: $" +p.getPrecio() +" ~ Tipo: "+ p.getTipo() + 
-                    " ~ Id: " +p.getId()+ "<br>" +"</h1>");
-                }
-            */
             
-            out.println("<h1>Servlet ListaProductosServlet at " + request.getContextPath() + "</h1>");
+            
+            out.println("<hr>");
             out.println(" <link href=\'estilos.css\' rel=\'stylesheet\' type=\'text/css\'/>");
             out.println("</body>");
             out.println("</html>");

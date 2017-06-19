@@ -42,6 +42,7 @@ public class EditarProductoServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("hdn_id"));
         String nombre = request.getParameter("txt_editaNombre");
         int precio = Integer.parseInt(request.getParameter("txt_editaPrecio"));
+        String tipo = request.getParameter("txt_editaTipo");
         int stock = Integer.parseInt(request.getParameter("txt_editaStock"));
         
         Productos editaProducto = new Productos();
@@ -49,6 +50,7 @@ public class EditarProductoServlet extends HttpServlet {
         editaProducto.setId(id);
         editaProducto.setNombre_producto(nombre);
         editaProducto.setPrecio(precio);
+        editaProducto.setTipo(tipo);
         editaProducto.setStock(stock);
         
         try{
@@ -69,8 +71,10 @@ public class EditarProductoServlet extends HttpServlet {
             
             
             
-            out.println("<h1>El producto " +nombre+" ,ha sido actualizado exitosamente!</h1><hr>");
+            out.println("<h1>El producto " +nombre+", ha sido actualizado exitosamente!</h1>"
+                    + "<img src=\"imagenes/smile.png\" alt=\"smile\" title=\"hola!\" /></h1><hr>");
             out.println("Volver al lisrado de productos <a href='ListaProductosServlet'>aquí... </a>");
+            out.println(" <link href=\'estilos.css\' rel=\'stylesheet\' type=\'text/css\'/>");
             out.println("</body>");
             out.println("</html>");
         }

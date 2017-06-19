@@ -16,7 +16,7 @@ String nombre = request.getParameter("p_nombre");
         <title>Eliminar Producto</title>
     </head>
     <body>
-        <h1>Eliminar Producto</h1><hr>
+        <h1><img src="imagenes/eliminar.png"/> Eliminar Producto</h1><hr>
         ¿Confirma que desea eliminar este producto?<br>
         <%out.println(nombre);%><br>
         <a href="EliminarProductoServlet?p_id=<%out.print(id);%>">Sí, Eliminar!</a> -

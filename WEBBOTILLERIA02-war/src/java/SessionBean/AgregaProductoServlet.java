@@ -89,7 +89,6 @@ public class AgregaProductoServlet extends HttpServlet {
             out.println("<h1>El nuevo producto ha sido agregado exitosamente!<br>"
                     + "<img src=\"imagenes/smile.png\" alt=\"smile\" title=\"hola!\" /></h1>");
             out.println("<hr/>");
-            //out.println("Puede ver el listado de productos aquí");
             out.println("<div>Puede ver el listado de productos <a href='ListaProductosServlet'>aquí.</a></div>");
             out.println("<link href=\'estilos.css\' rel=\'stylesheet\' type=\'text/css\'/>");
             out.println("</body>");
