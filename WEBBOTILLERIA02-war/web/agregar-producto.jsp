@@ -13,9 +13,9 @@
         
     </head>
     <body>
-        <h1>Ingreso de productos:</h1>
+        <h1><img src="imagenes/agregar1.png"/> <br>Ingreso de productos:</h1>
         <form name="frm_Ingresa_producto" method="post" action="AgregaProductoServlet">
-            <img src="imagenes/agregar.png"/><br>
+            
             <!--Ingresar id: <input type="text" name="txt_id_pro"  placeholder="Sólo números"><br>-->
             Ingresar nombre producto:<input type="text" name="txt_nombre_p"  placeholder="Ingresa nombre producto"><br>
             Ingresar Stock ini: <input type="text" name="txt_stock" placeholder="Ingresa stock inicial"><br>
@@ -34,16 +34,14 @@
         
         <hr />
        
-        <h1>Búsqueda por ID:</h1>
+        <h1><img src="imagenes/buscar1.png"/><br>Búsqueda por ID:</h1>
         <form name="frm_busca_producto" method="post" action="BuscaPorIDServlet">
-            <img src="imagenes/buscar.png"/><br>
             Ingresa ID del producto para iniciar la búsqueda: <input type="text" name="txt_busca_id"  placeholder="Ingresa id">
             <input type="submit" value="Buscar"> 
         </form>
         <hr /> 
         <form name="Lista_productos" method="post" action="ListaProductosServlet">
-            <h1>Mostrar listado de productos:</h1>
-            <img src="imagenes/lista.png"/><br>
+            <h1><img src="imagenes/lista1.png"/><br>Mostrar listado de productos:</h1>
             <input type="submit" value="Listar productos existentes">
         </form>
         <link href="estilos.css" rel="stylesheet" type="text/css"/>

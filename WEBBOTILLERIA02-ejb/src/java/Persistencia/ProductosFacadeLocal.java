@@ -31,4 +31,6 @@ public interface ProductosFacadeLocal {
     int count();
     
     //List<Productos> buscarProductosSegunNombre(String nombre);
+    
+    List<Productos> buscarProductoSegunTipo(String tipo);
 }

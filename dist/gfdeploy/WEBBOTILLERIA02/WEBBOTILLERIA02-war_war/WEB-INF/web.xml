@@ -20,6 +20,14 @@
         <servlet-name>EditarProductoServlet</servlet-name>
         <servlet-class>SessionBean.EditarProductoServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>BuscaPorTipoServlet</servlet-name>
+        <servlet-class>SessionBean.BuscaPorTipoServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>BuscaPorNombreServlet</servlet-name>
+        <servlet-class>SessionBean.BuscaPorNombreServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AgregaProductoServlet</servlet-name>
         <url-pattern>/AgregaProductoServlet</url-pattern>
@@ -39,6 +47,14 @@
     <servlet-mapping>
         <servlet-name>EditarProductoServlet</servlet-name>
         <url-pattern>/EditarProductoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BuscaPorTipoServlet</servlet-name>
+        <url-pattern>/BuscaPorTipoServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>BuscaPorNombreServlet</servlet-name>
+        <url-pattern>/BuscaPorNombreServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

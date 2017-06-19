@@ -6,10 +6,12 @@
 package Persistencia;
 
 import Procesos.Productos;
+import java.util.List;
 //import java.util.List;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 //import javax.persistence.Query;
 
 /**
@@ -25,6 +27,13 @@ public class ProductosFacade extends AbstractFacade<Productos> implements Produc
     @Override
     protected EntityManager getEntityManager() {
         return em;
+    }
+     public List<Productos>buscarProductoSegunTipo(String tipo){
+        Query q;
+        q=getEntityManager().createQuery("select p from Productos p where p.tipo=:"+tipo);
+        List<Productos>listaProducto=q.getResultList();
+        return listaProducto;
+        
     }
 
     public ProductosFacade() {
