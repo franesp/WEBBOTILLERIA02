@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/neok-/Documents/NetBeansProjects/WEBBOTILLERIA02/WEBBOTILLERIA02-war/web/eliminar-producto.jsp</file>
+            <file>file:/C:/Users/neok-/Documents/NetBeansProjects/WEBBOTILLERIA02/WEBBOTILLERIA02-war/src/java/SessionBean/EditarProductoServlet.java</file>
+            <file>file:/C:/Users/neok-/Documents/NetBeansProjects/WEBBOTILLERIA02/WEBBOTILLERIA02-war/web/agregar-producto.jsp</file>
+            <file>file:/C:/Users/neok-/Documents/NetBeansProjects/WEBBOTILLERIA02/WEBBOTILLERIA02-war/web/buscaproducto.jsp</file>
+            <file>file:/C:/Users/neok-/Documents/NetBeansProjects/WEBBOTILLERIA02/WEBBOTILLERIA02-war/src/java/SessionBean/BuscaPorIDServlet.java</file>
+            <file>file:/C:/Users/neok-/Documents/NetBeansProjects/WEBBOTILLERIA02/WEBBOTILLERIA02-war/src/java/SessionBean/AgregaProductoServlet.java</file>
+            <file>file:/C:/Users/neok-/Documents/NetBeansProjects/WEBBOTILLERIA02/WEBBOTILLERIA02-war/src/java/SessionBean/EliminarProductoServlet.java</file>
+            <file>file:/C:/Users/neok-/Documents/NetBeansProjects/WEBBOTILLERIA02/WEBBOTILLERIA02-war/src/java/SessionBean/ListaProductosServlet.java</file>
+            <file>file:/C:/Users/neok-/Documents/NetBeansProjects/WEBBOTILLERIA02/WEBBOTILLERIA02-war/web/editarProducto.jsp</file>
+        </group>
+    </open-files>
+</project-private>
